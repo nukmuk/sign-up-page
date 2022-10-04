@@ -3,7 +3,12 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
-h1 {
+:root {
+	--main-color: #ba0100;
+	--shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+h2 {
 	margin: 0px;
 }
 
@@ -16,7 +21,7 @@ h1 {
 }
 
 .img-area {
-	width: 35vw;
+	width: 40vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -55,10 +60,10 @@ h1 {
 
 .main {
 	background: #f9fafb;
-
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 	gap: 48px;
 
@@ -70,16 +75,34 @@ h1 {
 }
 
 .notice {
+	max-width: 750px;
+}
+
+form {
+	padding: 0px !important;
+	width: 100%;
 }
 
 .sign-up-form {
 	background: #ffffff;
+	padding: 8px 48px 64px;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* gap: 32px; */
+	/* justify-content: space-evenly; */
+
+	box-shadow: var(--shadow);
+}
+
+.header {
+	margin: 16px 0px;
 }
 
 .fields {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 32px 64px;
+	max-width: 700px;
 }
 
 label {
@@ -89,14 +112,33 @@ label {
 	color: #444444;
 }
 
-input {
-	border: solid 1px;
-	border-radius: 4px;
-}
-
 .input {
 	display: flex;
 	flex-direction: column;
+	flex-basis: 30%;
+}
+
+input {
+	border: #bbbbbb solid 1px;
+	border-radius: 4px;
+	padding: 6px;
+	width: 250px;
+	outline-color: var(--main-color);
+}
+input:focus {
+	box-shadow: var(--shadow);
+}
+
+.create-account {
+	background-color: var(--main-color);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 16px 48px;
+	margin: 32px 48px;
+	font-size: 1rem;
+
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 @font-face {
