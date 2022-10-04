@@ -136,7 +136,10 @@ input:focus {
 	border: rgb(110, 110, 255) solid 1px;
 }
 
-.error,
+.error {
+	border: red solid 1px !important;
+}
+
 input:not(:placeholder-shown) {
 	border: red solid 1px;
 }
