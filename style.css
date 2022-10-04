@@ -4,8 +4,11 @@ body {
 }
 
 :root {
-	--main-color: #ba0100;
+	--primary: #ba0100;
+	--darker: #860000;
 	--shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	--inset: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 h2 {
@@ -65,7 +68,7 @@ h2 {
 	flex-direction: column;
 	/* align-items: center; */
 	justify-content: center;
-	gap: 48px;
+	gap: 24px;
 
 	font-size: 1rem;
 }
@@ -76,6 +79,7 @@ h2 {
 
 .notice {
 	max-width: 750px;
+	margin: 48px 0px;
 }
 
 form {
@@ -123,22 +127,39 @@ input {
 	border-radius: 4px;
 	padding: 6px;
 	width: 250px;
-	outline-color: var(--main-color);
+	outline-color: var(--primary);
 }
 input:focus {
 	box-shadow: var(--shadow);
 }
 
-.create-account {
-	background-color: var(--main-color);
+button {
+	background-color: var(--primary);
 	color: white;
 	border: none;
 	border-radius: 8px;
 	padding: 16px 48px;
-	margin: 32px 48px;
+	margin: 48px 48px 0px;
 	font-size: 1rem;
 
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: var(--shadow);
+}
+
+button:hover {
+	background: #860000;
+}
+
+button:active {
+	box-shadow: var(--inset);
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--primary);
 }
 
 @font-face {
