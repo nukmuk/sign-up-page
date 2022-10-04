@@ -128,14 +128,21 @@ input {
 	border-radius: 4px;
 	padding: 8px 10px;
 	width: 250px;
-	outline-color: rgb(110, 110, 255);
-	outline-width: 1px;
 	font-size: 14px;
+	outline: none;
 }
 
-.error {
-	outline-color: red;
-	outline-style: solid;
+input:focus {
+	border: rgb(110, 110, 255) solid 1px;
+}
+
+.error,
+input:not(:placeholder-shown) {
+	border: red solid 1px;
+}
+
+input:valid {
+	border: lime solid 1px;
 }
 
 .input > .info {

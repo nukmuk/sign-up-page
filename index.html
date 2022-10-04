@@ -39,39 +39,42 @@
 
                                 <div class="fname input">
                                     <label for="fname">First Name</label>
-                                    <input type="text" name="fname" id="fname" placeholder="Persikka">
+                                    <input type="text" name="fname" id="fname" placeholder="Persikka" required>
                                     <div class="info"></div>
                                 </div>
 
                                 <div class="lname input">
 
                                     <label for="lname">Last Name</label>
-                                    <input type="text" name="lname" id="lname">
+                                    <input type="text" name="lname" id="lname" required placeholder=" ">
                                     <div class="info"></div>
                                 </div>
 
                                 <div class="email input">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" id="email">
+                                    <input type="email" name="email" id="email" required placeholder=" ">
                                     <div class="info"></div>
                                 </div>
 
                                 <div class="tel input">
 
                                     <label for="tel">Phone Number</label>
-                                    <input type="tel" name="tel" id="tel">
-                                    <div class="info"></div>
+                                    <input type="tel" name="tel" id="tel" required pattern="\+?[0-9]+" placeholder=" ">
+                                    <div class=" info">
+                                    </div>
                                 </div>
 
                                 <div class="password input">
                                     <label for="password">Password</label>
-                                    <input type="password" name="password" id="password" class="error">
+                                    <input type="password" name="password" id="password" class="error" required
+                                        placeholder=" ">
                                     <div class="info">* Passwords do not match</div>
                                 </div>
 
                                 <div class="confirm_password input">
                                     <label for="confirm_password">Confirm Password</label>
-                                    <input type="password" name="confirm_password" id="confirm_password" class="error">
+                                    <input type="password" name="confirm_password" id="confirm_password" class="error"
+                                        required placeholder=" ">
                                     <div class="info"></div>
                                 </div>
                             </div>
