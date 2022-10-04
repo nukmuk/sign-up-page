@@ -89,7 +89,7 @@ form {
 
 .sign-up-form {
 	background: #ffffff;
-	padding: 8px 48px 64px;
+	padding: 8px 48px 48px;
 	/* display: flex; */
 	/* flex-direction: column; */
 	/* gap: 32px; */
@@ -120,15 +120,29 @@ label {
 	display: flex;
 	flex-direction: column;
 	flex-basis: 30%;
+	gap: 2px;
 }
 
 input {
 	border: #bbbbbb solid 1px;
 	border-radius: 4px;
-	padding: 6px;
+	padding: 8px 10px;
 	width: 250px;
-	outline-color: var(--primary);
+	outline-color: rgb(110, 110, 255);
+	outline-width: 1px;
+	font-size: 14px;
 }
+
+.error {
+	outline-color: red;
+	outline-style: solid;
+}
+
+.input > .info {
+	color: red;
+	font-size: 14px;
+}
+
 input:focus {
 	box-shadow: var(--shadow);
 }
@@ -160,6 +174,14 @@ a {
 
 a:visited {
 	color: var(--primary);
+}
+
+a:hover {
+	font-weight: 600;
+}
+
+a:active {
+	color: var(--darker);
 }
 
 @font-face {
