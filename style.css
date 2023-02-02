@@ -160,6 +160,7 @@ input:valid {
 .input > .info {
 	color: red;
 	font-size: 14px;
+	visibility: hidden;
 }
 
 input:focus {
